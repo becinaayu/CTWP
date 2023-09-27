@@ -1,1 +1,139 @@
-while ==
+## Definição do problema (Matemática) - Solução do Problema - Pseudo código - Código (Qualquer linguagem)
+## Bibliotecas: Numpy, Pandas, Matplotlib, PyTorch
+Crivo das Medianas
+
+'''# Exercício 1 - Contagem Regressiva
+# Peça que o usuário digite um número positivo e, em seguida, conte regressivamente desse número até zero.
+num = int(input('Digite um número inteiro: '))
+while num >= 0: # Checagem de erro
+    num -= 1 # Contador
+    print(num)'''
+
+'''# Exercício 2 - Soma de números pares
+# Escreva um programa que peça ao usuário um número inteiro e, em seguida, calcule
+# a soma de todos os números pares de 2 até o número fornecido pelo usuário.
+num = int(input('Digite um número inteiro: '))
+soma = 0
+i = 2
+while i <= num:
+    soma += 1
+    i += 2
+print(f"A soma dos números pares de 2 até {num} é {soma}")'''
+
+'''
+# Exercício 3 - Tabuada
+# Peça um número e exiba a tabuada dele.
+tabuada = int(input("Diga qual número que você queira saber a tabuada: "))
+repeticoes = 0
+while repeticoes <= 10:
+    print(f"{tabuada}*{repeticoes} é igual a {tabuada*repeticoes}")
+    repeticoes+=1
+'''
+
+'''
+# Exercício 4 - Fatorial
+# Peça um número inteiro positivo e calcule o fatorial desse número usando um loop while.
+num = int(input('Digite um número inteiro: '))
+resultado = 1
+i = 1
+while i <= num:
+    resultado *= i
+    i += 1
+    print(f"O fatorial de {num} = {resultado}")
+'''
+
+'''
+# Exercício 5 - Média de números
+qtd = int(input('Digite uma quantia de números : '))
+soma = 0
+i = 0
+while i < qtd:
+    num = int(input(f"Diga o {i+1}º número : "))
+    soma += num
+    i += 1
+print(soma)
+media = soma/i
+print(media)
+
+# Do professor
+soma = 0
+count = 0
+
+while True:
+    numero = int(input("Digite um número inteiro positivo (ou negativo para parar) : "))
+    if numero < 0:
+        break
+    soma += numero
+    count +=1
+if count > 0:
+    media = soma / count
+    print(f"A média dos números é {media}")
+else:
+    print("Nenhum número positivo foi digitado")
+'''
+
+'''
+# Exercício 6:
+# Crie um programa que gera um número aleatório entre 1 e 100 e permite que o usuário
+# adivinhe qual é esse número. Forneça dicas sobre o palpite atual.
+
+import random
+numero_secreto = random.randint(1, 100)
+tentativas = 0
+while True: # Cria condições infinitamente.
+    palpite = int(input("Digite seu palpite : "))
+    tentativas += 1
+    if palpite == numero_secreto:
+        print(f"Parabéns! Você acertou o número {numero_secreto} em {tentativas} tentativas.")
+        break # Quebra a sequência infinita.
+    elif palpite < numero_secreto:
+        print("Tente um número maior.")
+    else:
+        print("Tente um número menor.")'''
+
+'''
+# Exercício 7 - Números primos
+
+n = int(input('Digite um número inteiro positivo : '))
+n_primo = True
+i = 2
+while i < n:
+    if n % i == 0:
+        n_primo = False
+        break
+    i += 1
+if n_primo:
+    print(f"{n} é um número primo.")
+else:
+    print(f"{n} não é um número primo.")'''
+
+'''
+# Exercício 8 - Sequência de Fibonacci
+# Gere os primeiros n termos da sequência de Fibonacci, onde n é um número inteiro positivo fornecido pelo usuário
+n = int(input('Quantos termos da sequência de Fibonacci você deseja gerar? : '))
+a, b = 0, 1
+i = 0
+while i < n:
+    print(a, end=" ")
+    a, b = b, a + b
+    i += 1
+print()
+'''
+
+'''
+# Exercício 9 - Filtro de números pares
+# Peça ao usuário para digitar uma lista de números inteiros separados por espaço.
+# Em seguida, exiba apenas os números pares da lista.
+numeros = input('Digite número inteiro : ')
+numeros = numeros.split()
+numeros_pares = []
+
+for num in numeros:
+    num = int(num)
+    if num % 2 == 0:
+        numeros_pares.append(num)
+
+print("Números pares na lista:", numeros_pares)
+'''
+
+# Exercício 10 - Calculadora 

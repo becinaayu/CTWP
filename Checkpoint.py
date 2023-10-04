@@ -1,7 +1,6 @@
-# Aula 6 -
+
 # Primeiro CP
 
-'''
 print("Seja bem vindo! Vamos prosseguir para as compras")
 idade = int(input('Digite seu ano de nascimento : '))
 cep = int(input('Agora digite o seu cep (Somente números) : '))
@@ -27,6 +26,6 @@ if idade <= 2005:
         print(f"E você deverá pagar R${frete} de frete ficando no total R${frete+valor_final}. Muito obrigado pela escolha, enviaremos seu pedido para o cep {cep}.")
 else:
     print('Que feio! Não são permitidas as compras de bebidas alcóolicas para menores')
-'''
+
 
 

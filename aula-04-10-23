@@ -1,1 +1,40 @@
-Aula 6 - 
+# Aula 6 -
+# Primeiro CP
+
+'''
+print("Seja bem vindo! Vamos prosseguir para as compras")
+idade = int(input('Digite seu ano de nascimento : '))
+cep = int(input('Agora digite o seu cep (Somente números) : '))
+if idade <= 2005:
+    print('Pode prosseguir com a compra!')
+    print('Temos vinho tinto, vinho madeira e vinho branco.')
+    tipo = input('Qual o tipo do vinho? (vt/vm/vb) ')
+    bebidas = int(input('Quantas garrafas vai comprar? '))
+    vt = 50
+    vm = 80
+    vb = 60
+    frete = 70
+    if tipo == vt:
+        valor_final = vt*bebidas
+    elif tipo == vm:
+        valor_final = vm*bebidas
+    else:
+        valor_final = vb*bebidas
+        print(f"Você pagará R${valor_final} pelo vinho.")
+    if valor_final > 100:
+        print(f"Ótimo, ganhou frete grátis! Muito obrigado pela escolha, enviaremos seu pedido para o cep {cep}.")
+    else:
+        print(f"E você deverá pagar R${frete} de frete ficando no total R${frete+valor_final}. Muito obrigado pela escolha, enviaremos seu pedido para o cep {cep}.")
+else:
+    print('Que feio! Não são permitidas as compras de bebidas alcóolicas para menores')
+'''
+# Correção lista loop:
+'''
+1-	Faça um programa que peça uma nota, entre zero e dez. 
+Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.
+'''
+
+ nota = int(input("Diga sua nota : "))
+while nota < 0 or nota > 10:
+    print("Você deve digitar algo entre 0 e 10")
+    nota = int(input("Digite sua nota novamente : ")) 

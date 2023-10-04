@@ -28,6 +28,5 @@ if idade <= 2005:
 else:
     print('Que feio! Não são permitidas as compras de bebidas alcóolicas para menores')
 '''
-# Correção lista loop:
-'''
+
 

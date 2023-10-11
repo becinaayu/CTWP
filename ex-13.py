@@ -5,3 +5,10 @@
 # dobro do percentual do ano anterior. Faça um programa que determine o salário atual desse funcionário. 
 # Após concluir isto, altere o programa permitindo que o usuário digite o salário inicial do funcionário.
 
+salario = 1000
+taxa = 0.015
+ano = 1995
+while ano < 2000:
+    salario *= (2**(ano-1995))*taxa + 1
+    ano += 1
+print(salario)

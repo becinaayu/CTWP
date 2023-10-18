@@ -139,3 +139,16 @@ for i in range(len(nomes)):
         break
     else:
         print("Somente o Danilo é Top")
+
+
+lista = [4,2,6,7,5,1]
+indice_maior = 0
+maior = lista[indice_maior]
+for i in range(1,len(lista)):
+    candidato = lista[i]
+    print(f"Vou testar se {candidato} é maior que {maior}")
+    if candidato > maior:
+        maior = candidato
+        indice_maior = i
+print(f"O maior é {maior}")
+

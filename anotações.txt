@@ -1,0 +1,4 @@
+Comandos somente de Python:
+
+maior = max(preco)
+local = precos.index(maior)
